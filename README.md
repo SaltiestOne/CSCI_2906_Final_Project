@@ -62,7 +62,7 @@ If two actions of the same type clash, they may stalemate, with neither action h
 
 
 ~~Rust
-Making any Attempt - regardless of type or whether it won a clash - will Rust its type for one turn. Making an Attempt with a Rusted type will incur some penalties: Any Attempt that would be a Tiebreaker will no longer be so, and the action taken upon winning a clash will lose potency. Additionally, Rusted Attempts never
+Making any Attempt - regardless of type or whether it won a clash - will Rust its type for one turn. Making an Attempt with a Rusted type will incur some penalties: Any Attempt that would be a Tiebreaker will no longer be so, and the action taken upon winning a clash will lose potency. Additionally, Rusted Attempts never grant Advantage, even if they otherwise should.
 
 ## Contributors
 
@@ -70,8 +70,7 @@ While there is no one else who directly contributed to this project (as all orig
 
 
 ## Some Code I'm Proud Of
-
-None of it. I’ve trapped myself in a prison of my own pride.
+TBA, there's some for sure
 
 
 # Appendix I: Stats and their Actions
@@ -81,31 +80,39 @@ Though the Hero cannot take the same Stat twice, different Stats have no restric
 A reliable weapon whose signature type is **TRICK**, representing fast and precise moulinets.
 ### Sword level 2: ***Spin Attack***
 Type: **WIDE**
+
 Standard **WIDE** Action with strong potency. 
 <sub>Do NOT attempt in a real sword fight. You could be hurt, or bullied by HEMA nerds.</sub>
 Deals damage scaled from the _Sword_ stat. Has a wider damage range than a normal attack. If it kills, the enemy will be denied any chance of a mutual-kill, making it useful when both parties are close to death.
 ### Sword level 4: ***Mana Burst***
 Type: **EVADE**
+
 Sacrifices 50% of maximum Mana to deal a strong, _Sword_-scaled attack. Cannot be used if Mana is below that threshold.
+
 Special: ***Ascended Mana Burst***
+
 If the Hero lacks the Mana necessary to perform a _Mana Burst_ but also knows the _Ascend_ Spell, health can be sacrificed to perform the Skill. No confirmation is asked before _Ascend_ing a qualifying _Mana Burst_, so be careful if the Hero knows both Actions and is below 50% Mana.
 
 ##Spear
 A classic weapon whose signature type is **QUICK**, representing its long reach.
 ###Spear level 2: ***Throw***
 Type: **BLOCK**
+
 Standard **BLOCK** Action with good scaling.
 ###Spear level 4: ***Heavenpierce***
-Type: ****
+Type: **TRICK**
+
 Deals strongly-scaling damage, and damages Mana when used against MagiCritters and Spellcasters.
 
 ##Shield (non-Attacking)
 An iconic implement that provides the Hero with a higher maximum health parameter as it levels.
 ### Shield level 2: ***Counter***
 Type: **QUICK**
+
 Acts like **BLOCK** and **EVADE** do during Basic Attempts: deals no damage but grants Advantage when winning a clash, unless the user already had Advantage, in which case, it deals damage.
 ### Shield level 4: ***Shield Bash***
 Type: **BLOCK**
+
 Deals damage scaling from the _Shield_ stat. Has a coin-flip chance to outright stun the target; if this succeeds, cooldown is increased by two.
 
 ##Arcanism (non-Attacking)
@@ -117,6 +124,7 @@ Restores a small amount of health to the user scaled from the _Magic_ stat. This
 
 ### Arcanism level 3: ***Ascend***
 Type: **NEUTRAL**
+
 Sacrifices a portion of current Health* to restore 50% of maximum Mana. Has no Mana cost itself.
 <sub>*it's actually a level-scaled attack by, and against, the Hero</sub>
 
@@ -128,11 +136,10 @@ Sacrifices a portion of current Health* to restore 50% of maximum Mana. Has no M
 A field of magic involving the study of the four elements – both their specialty and their harmony.
 ###Elementalism level 2: ***Temperence***
 Type: **TRICK**
+
 Heals its user for a moderate amount. If used with Advantage, it instead heals by spending as much Mana as available or as needed to heal to maximum health.
 
 ##Elementalism level 4: ***Towerfall***
-grant Advantage, even if they otherwise should.
-
 
 
 ##Appendix II: the files
