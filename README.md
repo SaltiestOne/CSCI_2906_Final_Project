@@ -30,7 +30,7 @@ Certain enemies may have Actions as well. And as the Hero advances, enemies of a
 
 
 
-~~The Pentagon
+##The Pentagon
 Each of the Five (non-**Neutral**) Attempt types interact with each other. Each beats two, loses to two, and ties with itself. Their relationships are as follows:
 
 **QUICK** attacks happen before their **WIDE** or **TRICK** alternatives, but if the defender is prepared to **EVADE** or **BLOCK**, they won't make contact.
@@ -41,27 +41,28 @@ Each of the Five (non-**Neutral**) Attempt types interact with each other. Each 
 
 When winning a clash of Attempts, the winner will take their prepared action, while the loser will not. 
 
-~~Basic Attempts
+##Basic Attempts
+
 Any fighter can make a Basic Attempt using one of the main five types (**NEUTRAL** basics are not allowed). After winning a clash with a basic attempt, **QUICK**, **WIDE**, and **TRICK** will deal damage, and **EVADE** and **BLOCK** will grant Advantage. If the winner already had Advantage, **EVADE** and **BLOCK** will do damage but won't grant Advantage again. Regardless of its type, clashing with an attempt will Rust that type for the next turn.
 
 
-~~ Action Attempts
+##Action Attempts
 
 Attempts can be made using a valid, usable Action as its base. Each Action has its own set attempt Type. Some may even deal damage as **EVADEs** or **BLOCKs** -- though in exchange, they won’t typically grant Advantage. They inherit Advantage from their user in the same way that Basic Attempts do, and they cause and are affected by Rusting normally as well. Regardless of the result of a clash made with an Action Attempt, resources will be spent according to the type of Action. If an Action Attempt wins its clash, it executes its effect immediately. If it loses, or ties (without breaking), its effect is lost.
 
-~~Advantage
+##Advantage
 Advantage is a state granted when successfully **EVADEing** or **BLOCKing** a Basic Attempt, or by the effects of some special Actions. When one has Advantage, their clashes always break ties (even if the opposing action is a Tiebreaker), and winning a clash will have additional or more potent effects. Both basic and special actions benefit from this. However, Attempts with Advantage do NOT win against opposing types that beat them. For example, an Advantaged **QUICK** attack would be faster than any opposing **QUICK** attacks (and certainly against **WIDE** and **TRICK** attacks, as normal), but it would not overcome a **BLOCK**. Advantage is almost always lost the turn after it is gained (either from being spent or losing a clash). Advantage is a one-way relationship: if one fighter has Advantage on another, the latter cannot have Advantage on the former. Thus, a clash cannot involve two Advantaged Attempts.
 
 
-~~Ties
+##Ties
 If two actions of the same type clash, they may stalemate, with neither action happening. However, there are some exceptions. Some actions have a Tiebreaker effect, and will act as if they won when they are opposed by the same type. Many Attacking Stats have a "signature" type, whose basic Attempts will always be Tiebreakers (and will be more potent as well). This goes for enemies as well – most of them have one set “signature” type for their Basic Attempts. In addition, some special actions are natively Tiebreakers, as noted by their description. (In the current build, none do. TBA) However, neither signature attacks nor Tiebreaking actions will break ties if their type is Rusted, and two Tiebreakers clashing will stalemate. Non-Rusted Attempts with Advantage always break ties, and Tiebreaker actions do not break ties with Advantaged actions. **NEUTRAL** Attempts are always Tiebreakers, unless they are Rusted.
 
 
-~~**NEUTRAL** actions
+##**NEUTRAL** actions
 **NEUTRAL** Attempts are the "sixth" type of Attempt. No one can make a **NEUTRAL** Basic Attempt, so they only occur when a special skill has **NEUTRAL** as its type. The affects of **NEUTRAL** actions will always happen if the type is not Rusted. However, while **NEUTRALs** typically interrupt non-NEUTRAL Attempts, they do not cause the opposing Attempt to fail for the purpose of Rusting and resource costs. If an opposing non-NEUTRAL is Advantaged, it will always beat a **NEUTRAL**. **NEUTRAL** actions tend to have weaker Advantaged benefits, if any. In the event that two **NEUTRAL** Attempts clash, a Rusted one will always be beaten, and a non-Rusted one with Advantage will always beat the other. If neither is Advantaged or Rusted, one happens at random. **NEUTRAL** Attempts can Rust like normal types, and when they are, they will always lose. Thus, using two **NEUTRAL**s in a row is not recommended.
 
 
-~~Rust
+##Rust
 Making any Attempt - regardless of type or whether it won a clash - will Rust its type for one turn. Making an Attempt with a Rusted type will incur some penalties: Any Attempt that would be a Tiebreaker will no longer be so, and the action taken upon winning a clash will lose potency. Additionally, Rusted Attempts never grant Advantage, even if they otherwise should.
 
 ## Contributors
@@ -80,17 +81,13 @@ Though the Hero cannot take the same Stat twice, different Stats have no restric
 A reliable weapon whose signature type is **TRICK**, representing fast and precise moulinets.
 ### Sword level 2: ***Spin Attack***
 Type: **WIDE**
-
 Standard **WIDE** Action with strong potency. 
 <sub>Do NOT attempt in a real sword fight. You could be hurt, or bullied by HEMA nerds.</sub>
 Deals damage scaled from the _Sword_ stat. Has a wider damage range than a normal attack. If it kills, the enemy will be denied any chance of a mutual-kill, making it useful when both parties are close to death.
 ### Sword level 4: ***Mana Burst***
 Type: **EVADE**
-
 Sacrifices 50% of maximum Mana to deal a strong, _Sword_-scaled attack. Cannot be used if Mana is below that threshold.
-
 Special: ***Ascended Mana Burst***
-
 If the Hero lacks the Mana necessary to perform a _Mana Burst_ but also knows the _Ascend_ Spell, health can be sacrificed to perform the Skill. No confirmation is asked before _Ascend_ing a qualifying _Mana Burst_, so be careful if the Hero knows both Actions and is below 50% Mana.
 
 ##Spear
@@ -124,7 +121,6 @@ Restores a small amount of health to the user scaled from the _Magic_ stat. This
 
 ### Arcanism level 3: ***Ascend***
 Type: **NEUTRAL**
-
 Sacrifices a portion of current Health* to restore 50% of maximum Mana. Has no Mana cost itself.
 <sub>*it's actually a level-scaled attack by, and against, the Hero</sub>
 
